@@ -1,0 +1,7 @@
+# ninja log v5
+1	19	0	/Users/roland-liedtke/Desktop/sj28961-pj/KaRoRoAd/KaroRoad_Mobile/android/app/.cxx/Debug/6n693y5y/arm64-v8a/CMakeFiles/cmake.verify_globs	c62020be90f3df66
+0	2344	1732721049612997502	CMakeFiles/appmodules.dir/Users/roland-liedtke/Desktop/sj28961-pj/KaRoRoAd/KaroRoad_Mobile/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	ef1f76509294c0fb
+0	2559	1732721049826162958	CMakeFiles/appmodules.dir/OnLoad.cpp.o	6ea5d837b81ead0d
+2559	2633	1732721049903240378	/Users/roland-liedtke/Desktop/sj28961-pj/KaRoRoAd/KaroRoad_Mobile/android/app/build/intermediates/cxx/Debug/6n693y5y/obj/arm64-v8a/libappmodules.so	91d7bdfec63853ab
+1	34	0	/Users/roland-liedtke/Desktop/sj28961-pj/KaRoRoAd/KaroRoad_Mobile/android/app/.cxx/Debug/6n693y5y/arm64-v8a/CMakeFiles/cmake.verify_globs	c62020be90f3df66
+0	30	0	/Users/roland-liedtke/Desktop/sj28961-pj/KaRoRoAd/KaroRoad_Mobile/android/app/.cxx/Debug/6n693y5y/arm64-v8a/CMakeFiles/cmake.verify_globs	c62020be90f3df66

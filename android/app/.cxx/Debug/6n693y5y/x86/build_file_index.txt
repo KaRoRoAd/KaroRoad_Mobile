@@ -1,0 +1,1 @@
+/Users/roland-liedtke/Desktop/sj28961-pj/KaRoRoAd/KaroRoad_Mobile/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt
