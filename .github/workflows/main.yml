@@ -1,0 +1,18 @@
+# Nasz workflow nazywa się “CI”
+name: CI
+
+# Wystartuje, gdy ktoś zrobi PR do gałęzi main
+on:
+  pull_request:
+    branches: ["main"]
+    # Zmiany muszą obejmować pliki z wymienionymi rozszerzeniami.
+    # paths:
+    # - '**/src/**'
+    # - '**/pom.xml'
+
+# Sekcja concurrency pozwala na anulowanie zadań w trakcie pracy, jeżeli należą do tej samej grupy. Np. kontynuowanie procesu budowania projektu nie ma sensu, jeżeli testy nie przeszły.
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+# jobs:
