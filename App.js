@@ -1,21 +1,23 @@
-import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-
-import LoginScreen from './src/components/LoginScreen';
-import HelloWorldScreen from './src/components/HelloWorldScreen';
-
-const Stack = createStackNavigator();
+import React, {useEffect} from 'react';
+import AppNavigator from './src/navigation/AppNavigator';
+import notifee, {AuthorizationStatus} from '@notifee/react-native';
 
 const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="HelloWorld" component={HelloWorldScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  useEffect(() => {
+    const requestNotificationPermission = async () => {
+      const settings = await notifee.requestPermission();
+
+      if (settings.authorizationStatus >= AuthorizationStatus.AUTHORIZED) {
+        console.log('Permission granted');
+      } else {
+        console.log('Permission denied');
+      }
+    };
+
+    requestNotificationPermission();
+  }, []);
+
+  return <AppNavigator />;
 };
 
 export default App;
