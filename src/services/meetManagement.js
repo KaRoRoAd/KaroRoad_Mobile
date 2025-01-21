@@ -50,7 +50,7 @@ export const getMeetUsers = async (meetId) => {
   console.log('Getting users for meet:', meetId);
   try {
     const response = await axios.get(
-      `${API_URL}/meet_user/${meetId}`,
+      `${API_URL}/meet`,
       {
         headers: {
           'Content-Type': 'application/ld+json',

@@ -51,14 +51,14 @@ export const deleteEmployeeFromFirm = async (email) => {
 
 export const getEmployees = async (firmId) => {
   console.log('Getting employees for firm:', firmId);
-  console.log('API URL:', `${API_URL}/firm_management/${firmId}`);
+  console.log('API URL:', `${API_URL}/firm_management`);
   try {
     const headers = {
       'Content-Type': 'application/ld+json',
       ...getAuthHeader(),
     };
     console.log('Request headers:', headers);
-    const response = await axios.get(`${API_URL}/firm_management/${firmId}`, {
+    const response = await axios.get(`${API_URL}/firm_management`, {
       headers: headers,
     });
     console.log('Get employees response:', response.data);

@@ -34,9 +34,9 @@ const ChangePasswordScreen = ({navigation, route}) => {
       const response = await axios.post(
         `${API_URL}/users/change_password`,
         {
-          email: email,
-          resetCode: resetCode.trim(),
-          newPassword: newPassword,
+          code: resetCode.trim(),
+          password: newPassword,
+          confirmPassword: newPassword,
         },
         {
           headers: {
@@ -44,6 +44,7 @@ const ChangePasswordScreen = ({navigation, route}) => {
           },
         },
       );
+      console.log('Change password response:', response.data);
 
       Alert.alert('Sukces', 'Hasło zostało zmienione', [
         {
