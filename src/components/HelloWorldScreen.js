@@ -5,12 +5,6 @@ import {clearToken} from '../services/auth';
 const HelloWorldScreen = ({navigation}) => {
   const menuItems = [
     {
-      title: 'Spotkania',
-      description: 'Zarządzaj spotkaniami',
-      screen: 'Meet',
-      icon: '📅',
-    },
-    {
       title: 'Firmy',
       description: 'Zarządzaj firmami',
       screen: 'Firm',
