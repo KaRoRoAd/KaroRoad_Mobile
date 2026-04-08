@@ -77,12 +77,6 @@ const ResetPasswordScreen = ({navigation}) => {
           color="#007AFF"
         />
       )}
-
-      <TouchableOpacity
-        style={styles.backButton}
-        onPress={() => navigation.goBack()}>
-        <Text style={styles.backButtonText}>Powrót do logowania</Text>
-      </TouchableOpacity>
     </View>
   );
 };
